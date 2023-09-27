@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div>
+        <p id="tulisan"> ini adalah tulisan</p>
+    </div>
+
+    <ul id="menu">
+        <li id="first">first</li>
+        <li id="second">second</li>
+        <li id="thrid">thrid</li>
+    </ul>
+
+    <h1 id="title"></h1>
+    <p id="description"></p>
+
+    <script>
+    //  documentproperty
+        console.info(document.title)
+        console.info(document.head)
+        console.info(document.body)
+        console.info(document.images)
+        console.info(document.contentType)
+        // endproperty
+
+
+
+        const tulisan = document.getElementById("tulisan");
+        console.info(tulisan);
+
+        const menu =document.getElementById("menu");
+        console.info(menu);
+        console.info(menu.childNodes);
+
+        const second = document.getElementById("second");
+        console.info(second);
+        console.info(second.textContent);
+
+        menu.removeChild(document.getElementById("first"))
+
+        const title = document.getElementById("title");
+        title.textContent = "belajar javascript dom";
+    </script>
+</body>
+</html>
