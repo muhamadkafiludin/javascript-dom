@@ -18,7 +18,9 @@
     </ul>
 
     <h1 id="title"></h1>
-    <p id="description"></p>
+    <p id="title2"></p>
+
+    <h1 id="header"></h1>
 
     <script>
     //  documentproperty
@@ -46,6 +48,30 @@
 
         const title = document.getElementById("title");
         title.textContent = "belajar javascript dom";
+
+        const title2 = document.getElementById("title2");
+        title2.textContent = "belajarr dom";
+
+
+        // settimeout
+        function addElement(){
+            const header = document.createElement("h1");
+            header.textContent = "programer";
+            document.body.appendChild(header);
+        }
+
+        setTimeout(addElement, 5000);
+        console.info("program selesai")
+        // endtimeout
+        // setinterval
+        function setTime(){
+            const header = document.getElementById("header");
+            header.textContent = new Date().toString();
+        }
+
+        setInterval(setTime,1000);
+        console.info("program selesai");
+        // endinterval
     </script>
 </body>
 </html>
